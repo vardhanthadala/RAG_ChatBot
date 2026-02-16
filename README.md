@@ -18,6 +18,16 @@ A high-performance Retrieval-Augmented Generation (RAG) application that allows 
 
 ---
 
+## 📸 Screenshots
+
+### Chat Interface
+![Chat UI](screenshots/chat.png)
+
+### Upload & Session Management
+![Upload UI](screenshots/upload.png)
+
+---
+
 ## 🛠 Tech Stack
 
 ### Frontend
@@ -124,7 +134,7 @@ A high-performance Retrieval-Augmented Generation (RAG) application that allows 
 
 ---
 
-## � Future Roadmap
+## 💭 Future Roadmap
 - [ ] **Multi-file Upload**: Chat with multiple documents simultaneously.
 - [ ] **Advanced Citations**: Direct links back to PDF page numbers/sections.
 - [ ] **Adaptive Chunking**: Use Semantic Chunking for better context retrieval.
@@ -132,6 +142,6 @@ A high-performance Retrieval-Augmented Generation (RAG) application that allows 
 
 ---
 
-## �🛡 License
+## ⭐ License
 Built with ❤️ by Vardhan - AI Dev
 
