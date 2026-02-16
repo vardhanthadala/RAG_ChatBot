@@ -75,21 +75,24 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ## 🏗 Architecture & Flow
 
-1. **Ingestion Flow**:
-   - PDF is uploaded via the `/upload` endpoint.
-   - Files are stored locally in the `uploads/` directory.
-   - `PyPDFLoader` extracts text, and `RecursiveCharacterTextSplitter` chunks the data.
-   - Chunks are vectorized using HuggingFace embeddings and stored in a unique FAISS index for that session.
-
-2. **Retrieval Flow**:
-   - User sends a message via the `/chat` endpoint.
-   - The query is vectorized and a similarity search is performed against the session-specific FAISS index.
-   - Top-K relevant segments (context) are retrieved.
-
-3. **Generation Flow**:
-   - The retrieved context + conversation history + user query are bundled into a specialized prompt.
-   - Groq LLM processes the prompt and streams the response back to the client.
-   - The final response is asynchronously saved to MongoDB for persistence.
+Frontend (Next.js)
+        │
+        ▼
+FastAPI Backend
+        │
+        ├── Document Ingestion
+        │       ├─ PDF Loader
+        │       ├─ Chunking
+        │       └─ Embedding (HF)
+        │
+        ├── Vector Store (FAISS)
+        │
+        ├── Retrieval Pipeline
+        │
+        ├── LLM (Groq Llama 3)
+        │
+        └── MongoDB
+                └─ Chat History
 
 ---
 
