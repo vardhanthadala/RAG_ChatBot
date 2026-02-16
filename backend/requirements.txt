@@ -1,0 +1,31 @@
+fastapi
+uvicorn
+python-dotenv
+
+# LangChain ecosystem
+langchain
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+
+# Embeddings
+sentence-transformers
+transformers
+huggingface-hub
+
+# Vector store
+faiss-cpu
+
+# PDF loading
+pypdf
+
+# LLM provider
+groq
+
+# MongoDB
+pymongo
+
+# Utilities
+tqdm
+numpy
+scikit-learn
