@@ -1,4 +1,4 @@
-# 🧠 RAG Chatbot — Intelligent Document Assistant
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c1d21042-4aab-47ec-83a9-4960b498f73b" /># 🧠 RAG Chatbot — Intelligent Document Assistant
 
 
 
@@ -24,10 +24,8 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 ## 📸 Screenshots
 
 ### Chat Interface
-![Chat UI](screenshots/chat.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4b658ca4-7868-4bb1-a845-b9b3316e03d3" />
 
-### Upload & Session Management
-![Upload UI](screenshots/upload.png)
 
 ---
 
