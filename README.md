@@ -106,7 +106,7 @@ This system demonstrates production-level GenAI engineering skills:
 ## 🚦 Getting Started
 
 ### Prerequisites
-- Python 3.10+
+- Python 3.10.13
 - Node.js 18+
 - MongoDB instance (Atlas or Local)
 - Groq API Key
