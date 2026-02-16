@@ -170,7 +170,7 @@ This system demonstrates production-level GenAI engineering skills:
 
 ---
 
-## 💭 Future Roadmap
+## 💭 Future Improvements
 - [ ] **Multi-file Upload**: Chat with multiple documents simultaneously.
 - [ ] **Advanced Citations**: Direct links back to PDF page numbers/sections.
 - [ ] **Adaptive Chunking**: Use Semantic Chunking for better context retrieval.
@@ -178,6 +178,5 @@ This system demonstrates production-level GenAI engineering skills:
 
 ---
 
-## ⭐ License
-Built with ❤️ by Vardhan - AI Dev
-
+## 👨‍💻 Author
+Vardhan — AI / Full-Stack Developer
