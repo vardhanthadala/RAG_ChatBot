@@ -15,6 +15,12 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ---
 
+# 🌐 Live Demo
+
+🔗 Live App: (add deployed link later)
+
+---
+
 ## 🚀 Features
 
 - **Instant Document Indexing**: Upload PDFs and chat within seconds. Synchronous indexing ensures your data is ready immediately.
