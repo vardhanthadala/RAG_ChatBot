@@ -4,6 +4,8 @@
 import { useState, useRef, useEffect } from "react";
 import { Trash2 } from "lucide-react";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://rag-chatbot-nsyr.onrender.com";
+
 /* ─────────────────────────────────────────────
    Toast Notification Component
 ───────────────────────────────────────────── */
@@ -102,7 +104,7 @@ function Upload({
       form.append("file", file);
       form.append("session_id", sessionId);
 
-      const response = await fetch("https://rag-chatbot-nsyr.onrender.com/upload", {
+      const response = await fetch(`${API_URL}/upload`, {
         method: "POST",
         body: form,
       });
@@ -332,7 +334,7 @@ export default function Home() {
   }, [question]);
 
   useEffect(() => {
-    fetch("https://rag-chatbot-nsyr.onrender.com/sessions")
+    fetch(`${API_URL}/sessions`)
       .then(res => res.json())
       .then(setSessions);
   }, []);
@@ -340,7 +342,7 @@ export default function Home() {
   const confirmDelete = async () => {
     if (!sessionToDelete) return;
 
-    await fetch(`https://rag-chatbot-nsyr.onrender.com/delete-session?session_id=${sessionToDelete}`, {
+    await fetch(`${API_URL}/delete-session?session_id=${sessionToDelete}`, {
       method: "DELETE"
     });
 
@@ -371,7 +373,7 @@ export default function Home() {
 
     try {
       const res = await fetch(
-        `https://rag-chatbot-nsyr.onrender.com/chat?session_id=${sessionId}&q=${encodeURIComponent(question.trim())}`
+        `${API_URL}/chat?session_id=${sessionId}&q=${encodeURIComponent(question.trim())}`
       );
 
       const reader = res.body?.getReader();
@@ -409,7 +411,7 @@ export default function Home() {
       return;
     }
 
-    const res = await fetch("https://rag-chatbot-nsyr.onrender.com/create-session", {
+    const res = await fetch(`${API_URL}/create-session`, {
       method: "POST",
     });
 
@@ -417,7 +419,7 @@ export default function Home() {
     setSessionId(data.session_id);
     setMessages([]);
 
-    const s = await fetch("https://rag-chatbot-nsyr.onrender.com/sessions");
+    const s = await fetch(`${API_URL}/sessions`);
     setSessions(await s.json());
   };
 
@@ -580,7 +582,7 @@ export default function Home() {
                   onClick={async () => {
                     setSessionId(s.session_id);
                     setDocUploaded(false);   // IMPORTANT
-                    const res = await fetch(`https://rag-chatbot-nsyr.onrender.com/history?session_id=${s.session_id}`);
+                    const res = await fetch(`${API_URL}/history?session_id=${s.session_id}`);
                     const data = await res.json();
                     setMessages(data);
                   }}
