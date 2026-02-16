@@ -17,7 +17,7 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 # 🌐 Live Demo
 
-🔗 Live App: (add deployed link later)
+🔗 Live App:[ (add deployed link later)](https://rag-chat-bot-beta.vercel.app/)
 
 ---
 
