@@ -31,10 +31,10 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ---
 
-## 🚀 Features
+## ⭐ Key Features
 
-- **Instant Document Indexing**: Upload PDFs and chat within seconds. Synchronous indexing ensures your data is ready immediately.
-- **Per-Session Knowledge**: Each chat session maintains its own isolated FAISS vector database.
+- *📄 PDF Upload & Instant Indexing
+- **🔍 Semantic Search using FAISS
 - **Streaming Responses**: Token-by-token response streaming from Groq's Llama 3.1 model.
 - **Persistent History**: Full chat history and session management powered by MongoDB.
 - **Premium UI/UX**: 
