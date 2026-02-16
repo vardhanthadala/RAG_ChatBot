@@ -1,6 +1,17 @@
-# RAG Chatbot - Intelligent Document Assistant
+#🧠 RAG Chatbot — Intelligent Document Assistant
 
-A high-performance Retrieval-Augmented Generation (RAG) application that allows you to chat with your PDF documents. Built with a modern tech stack focused on speed, efficiency, and a premium user experience.
+
+
+
+
+
+
+
+
+
+
+
+Production-ready Retrieval-Augmented Generation (RAG) system enabling users to upload documents and interact with them through a real-time AI chat interface powered by vector search and LLM streaming.
 
 ---
 
