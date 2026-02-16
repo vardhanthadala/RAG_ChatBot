@@ -102,7 +102,7 @@ function Upload({
       form.append("file", file);
       form.append("session_id", sessionId);
 
-      const response = await fetch("http://127.0.0.1:8000/upload", {
+      const response = await fetch("https://rag-chatbot-nsyr.onrender.com/upload", {
         method: "POST",
         body: form,
       });
@@ -332,7 +332,7 @@ export default function Home() {
   }, [question]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/sessions")
+    fetch("https://rag-chatbot-nsyr.onrender.com/sessions")
       .then(res => res.json())
       .then(setSessions);
   }, []);
@@ -340,7 +340,7 @@ export default function Home() {
   const confirmDelete = async () => {
     if (!sessionToDelete) return;
 
-    await fetch(`http://127.0.0.1:8000/delete-session?session_id=${sessionToDelete}`, {
+    await fetch(`https://rag-chatbot-nsyr.onrender.com/delete-session?session_id=${sessionToDelete}`, {
       method: "DELETE"
     });
 
@@ -371,7 +371,7 @@ export default function Home() {
 
     try {
       const res = await fetch(
-        `http://127.0.0.1:8000/chat?session_id=${sessionId}&q=${encodeURIComponent(question.trim())}`
+        `https://rag-chatbot-nsyr.onrender.com/chat?session_id=${sessionId}&q=${encodeURIComponent(question.trim())}`
       );
 
       const reader = res.body?.getReader();
@@ -409,7 +409,7 @@ export default function Home() {
       return;
     }
 
-    const res = await fetch("http://127.0.0.1:8000/create-session", {
+    const res = await fetch("https://rag-chatbot-nsyr.onrender.com/create-session", {
       method: "POST",
     });
 
@@ -417,7 +417,7 @@ export default function Home() {
     setSessionId(data.session_id);
     setMessages([]);
 
-    const s = await fetch("http://127.0.0.1:8000/sessions");
+    const s = await fetch("https://rag-chatbot-nsyr.onrender.com/sessions");
     setSessions(await s.json());
   };
 
@@ -580,7 +580,7 @@ export default function Home() {
                   onClick={async () => {
                     setSessionId(s.session_id);
                     setDocUploaded(false);   // IMPORTANT
-                    const res = await fetch(`http://127.0.0.1:8000/history?session_id=${s.session_id}`);
+                    const res = await fetch(`https://rag-chatbot-nsyr.onrender.com/history?session_id=${s.session_id}`);
                     const data = await res.json();
                     setMessages(data);
                   }}
