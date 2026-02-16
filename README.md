@@ -73,12 +73,36 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ---
 
-## 🏗 Architecture & Flow
+## 🏗 Architecture 
 
 <img width="406" height="521" alt="image" src="https://github.com/user-attachments/assets/f06d86cc-c61b-43c1-ab47-8d74c1719377" />
 
 
 ---
+## 🧩 System Flow
+
+1. User uploads document
+2. Backend chunks + embeds text
+3. Vectors stored in FAISS
+4. User question received
+5. Retriever fetches relevant chunks
+6. LLM generates contextual answer
+7. Response streamed to UI
+
+---
+
+## 🧠 Why This Project Matters
+
+This system demonstrates production-level GenAI engineering skills:
+
+ - Retrieval-Augmented Generation design
+ - Vector database orchestration
+ - Real-time streaming inference
+ - Multi-session architecture
+ - Full-stack AI product deployment
+
+---
+
 
 ## 🚦 Getting Started
 
