@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/c1d21042-4aab-47ec-83a9-4960b498f73b" /># 🧠 RAG Chatbot — Intelligent Document Assistant
+# 🧠 RAG Chatbot — Intelligent Document Assistant
 
 
 
