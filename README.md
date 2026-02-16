@@ -21,6 +21,16 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ---
 
+## 📸 Screenshots
+
+### Chat Interface
+![Chat UI](screenshots/chat.png)
+
+### Upload & Session Management
+![Upload UI](screenshots/upload.png)
+
+---
+
 ## 🚀 Features
 
 - **Instant Document Indexing**: Upload PDFs and chat within seconds. Synchronous indexing ensures your data is ready immediately.
@@ -35,15 +45,7 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ---
 
-## 📸 Screenshots
 
-### Chat Interface
-![Chat UI](screenshots/chat.png)
-
-### Upload & Session Management
-![Upload UI](screenshots/upload.png)
-
----
 
 ## 🛠 Tech Stack
 
