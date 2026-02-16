@@ -29,5 +29,5 @@ pymongo
 
 # Utilities
 tqdm
-numpy
+numpy<2
 scikit-learn
