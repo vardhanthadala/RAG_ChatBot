@@ -21,9 +21,10 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### Chat Interface
+## Chat Interface
+
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4b658ca4-7868-4bb1-a845-b9b3316e03d3" />
 
 
