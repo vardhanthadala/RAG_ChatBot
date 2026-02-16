@@ -75,24 +75,8 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ## 🏗 Architecture & Flow
 
-Frontend (Next.js)
-        │
-        ▼
-FastAPI Backend
-        │
-        ├── Document Ingestion
-        │       ├─ PDF Loader
-        │       ├─ Chunking
-        │       └─ Embedding (HF)
-        │
-        ├── Vector Store (FAISS)
-        │
-        ├── Retrieval Pipeline
-        │
-        ├── LLM (Groq Llama 3)
-        │
-        └── MongoDB
-                └─ Chat History
+<img width="406" height="521" alt="image" src="https://github.com/user-attachments/assets/f06d86cc-c61b-43c1-ab47-8d74c1719377" />
+
 
 ---
 
