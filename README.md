@@ -33,15 +33,21 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ## ⭐ Key Features
 
-- *📄 PDF Upload & Instant Indexing
-- **🔍 Semantic Search using FAISS
-- **Streaming Responses**: Token-by-token response streaming from Groq's Llama 3.1 model.
-- **Persistent History**: Full chat history and session management powered by MongoDB.
-- **Premium UI/UX**: 
-  - Sleek glassmorphic design.
-  - Dynamic Dark/Light mode support.
-  - Interactive status indicators (Indexing, Typing, etc.).
-  - Responsive sidebar and auto-resizing chat input.
+📄 PDF Upload & Instant Indexing
+
+🔍 Semantic Search using FAISS
+
+⚡ Token-streaming responses (Groq LLM)
+
+💬 Persistent multi-session chat history
+
+📂 Session-based vector databases
+
+🌙 Light / Dark premium UI
+
+🔐 API-secure backend architecture
+
+📊 Scalable modular RAG pipeline
 
 ---
 
