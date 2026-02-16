@@ -10,10 +10,10 @@ import time
 from datetime import datetime
 
 # Local imports
-from db import sessions_col, messages_col
-from rag_pipeline import ask_question, reload_vectorstore
-from ingest import ingest_pdf
-from config import VECTOR_PATH
+from backend.db import sessions_col, messages_col
+from backend.rag_pipeline import ask_question, reload_vectorstore
+from backend.ingest import ingest_pdf
+from backend.config import VECTOR_PATH
 
 app = FastAPI()
 

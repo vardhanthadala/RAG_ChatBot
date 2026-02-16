@@ -2,7 +2,7 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-from config import embeddings, VECTOR_PATH
+from backend.config import embeddings, VECTOR_PATH
 
 
 import os

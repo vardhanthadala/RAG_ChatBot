@@ -3,7 +3,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from groq import Groq
 import os
-from config import GROQ_API_KEY, VECTOR_PATH, embeddings
+from backend.config import GROQ_API_KEY, VECTOR_PATH, embeddings
 
 # session_id -> FAISS DB
 db_sessions = {}
