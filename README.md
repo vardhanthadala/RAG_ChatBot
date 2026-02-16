@@ -33,21 +33,21 @@ Production-ready Retrieval-Augmented Generation (RAG) system enabling users to u
 
 ## ⭐ Key Features
 
-📄 PDF Upload & Instant Indexing
+ - 📄 PDF Upload & Instant Indexing
 
-🔍 Semantic Search using FAISS
+ - 🔍 Semantic Search using FAISS
 
-⚡ Token-streaming responses (Groq LLM)
+ - ⚡ Token-streaming responses (Groq LLM)
 
-💬 Persistent multi-session chat history
+ - 💬 Persistent multi-session chat history
 
-📂 Session-based vector databases
+ - 📂 Session-based vector databases
 
-🌙 Light / Dark premium UI
+ - 🌙 Light / Dark premium UI
 
-🔐 API-secure backend architecture
+ - 🔐 API-secure backend architecture
 
-📊 Scalable modular RAG pipeline
+ - 📊 Scalable modular RAG pipeline
 
 ---
 
