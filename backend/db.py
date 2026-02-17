@@ -4,7 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = MongoClient(os.getenv("MONGO_URI"))
+client = MongoClient(
+    os.getenv("MONGO_URI"),
+    serverSelectionTimeoutMS=5000  # 5 second timeout
+)
 
 db = client["rag_chat"]
 
