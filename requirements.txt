@@ -31,3 +31,5 @@ pymongo
 tqdm
 numpy<2
 scikit-learn
+
+python-multipart
